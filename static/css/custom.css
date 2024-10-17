@@ -1,0 +1,50 @@
+/* Custom styles */
+body {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+.container {
+    max-width: 800px;
+}
+
+.card {
+    background-color: var(--bs-gray-800);
+    border: none;
+}
+
+.list-group-item {
+    background-color: var(--bs-gray-700);
+    color: var(--bs-light);
+    border-color: var(--bs-gray-600);
+}
+
+.form-control {
+    background-color: var(--bs-gray-700);
+    color: var(--bs-light);
+    border-color: var(--bs-gray-600);
+}
+
+.form-control:focus {
+    background-color: var(--bs-gray-600);
+    color: var(--bs-light);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 0.5s ease-in-out;
+}
